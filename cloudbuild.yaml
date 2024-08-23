@@ -18,8 +18,8 @@ steps:
       - '$_AR_HOSTNAME/$PROJECT_ID/$_AR_REPO/$_SERVICE_NAME:$COMMIT_SHA'
       - '--region'
       - $_DEPLOY_REGION
-      - '--plataform'
-      - $_PLATAFORM
+      - '--platform'
+      - $_PLATFORM
       - '--allow-unauthenticated'
     entrypoint: gcloud
 timeout: 1200s
