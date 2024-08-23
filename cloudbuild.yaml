@@ -20,6 +20,7 @@ steps:
       - $_DEPLOY_REGION
       - '--plataform'
       - $_PLATAFORM
+      - '--allow-unauthenticated'
     entrypoint: gcloud
 timeout: 1200s
 images:
