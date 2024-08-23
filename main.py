@@ -1,7 +1,10 @@
-import time
-def main():
-    print("Script iniciado no Cloud Run!")
-    time.sleep(5)
-    print("Script finalizado com sucesso!")
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Script iniciado no Cloud Run!"
+
 if __name__ == '__main__':
-    main()
+    app.run(host='0.0.0.0', port=8080)
